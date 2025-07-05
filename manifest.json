@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Review Scraper",
+  "description": "Collect product reviews from allowed domains.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Review Scraper"
+  },
+  "background": {
+    "service_worker": "serviceWorker.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting", "storage", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "options_page": "options.html"
+}
